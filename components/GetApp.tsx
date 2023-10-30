@@ -11,7 +11,7 @@ const GetApp = () => {
           <p className="regular-16 text-gray-10">
             Available on IOS and Android
           </p>
-          <div>
+          <div className='flex flex-col gap-y-3'>
             <Button
               type="button"
               title="Download App"
@@ -22,7 +22,7 @@ const GetApp = () => {
             <Button
               type="button"
               title="Download App"
-              icon="/apple.svg"
+              icon="/android.svg"
               variant="btn_dark_green"
               full
             />
