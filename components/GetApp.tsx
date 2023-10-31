@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Button from './Button'
 
 const GetApp = () => {
@@ -11,22 +12,31 @@ const GetApp = () => {
           <p className="regular-16 text-gray-10">
             Available on IOS and Android
           </p>
-          <div className='flex flex-col gap-y-3'>
+          <div className="flex flex-col gap-3 w-full whitespace-nowrap xl:flex-row">
             <Button
               type="button"
-              title="Download App"
+              title="App Store"
               icon="/apple.svg"
               variant="btn_white_text"
               full
             />
             <Button
               type="button"
-              title="Download App"
+              title="Play Store"
               icon="/android.svg"
               variant="btn_dark_green"
               full
             />
           </div>
+        </div>
+        <div className="flex flex-1 items-center justify-end">
+          <Image
+            src='/phones.png'
+            alt='phones'
+            width={550}
+            height={870}
+            className=''
+          />
         </div>
       </div>
     </section>
